@@ -5,22 +5,105 @@
     <meta charset="utf-8">
     <title>Tinder Cats</title>
 
+    <!-- adapt to device view size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+    <!-- Font Awsome - icons -->
+    <script src="https://use.fontawesome.com/8a8edf3e4a.js"></script>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+    <style> body { font-family: 'Patrick Hand SC', cursive !important; } </style>
+
+    <!-- Extra style for buttons -->
+    <style>
+    .btn--control:hover { transform: scale(1.1); }
+    </style>
+
   </head>
-  <body>
+  <body class="bg-faded">
 
+    <div class="container-fluid">
 
-    <div class="container">
-
-      <h1>Here we go...</h1>
-
-      <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Meow..jpg" height="200px" alt="happy cat" />
+      <nav class="nav d-flex justify-content-between bg-danger rounded-bottom">
+        <a class="nav-link text-white" href="">Tinder Cats</a>
+        <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#likedCatsModal"><i class="fa fa-heart" aria-hidden="true"></i></a>
+      </nav>
 
     </div>
 
+    <div class="container mt-5">
+
+      <div class="row justify-content-center">
+
+        <div clas="col">
+
+          <div class="card animated fadeInUp card--tinder_cats" id="visible-card">
+
+            <img class="card-img-top" src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Meow..jpg" height="200px" alt="happy cat" />
+
+            <div class="card-block">
+
+              <p class="card-text">I am happy</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- controllers buttons -->
+    <div class="container text-center p-3 fixed-bottom">
+
+      <div class="row justify-content-around">
+
+        <div class="col-4">
+
+          <button type="button" class="btn btn-outline-danger btn--control" id="action-none">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+
+        </div>
+
+        <div class="col-4">
+
+
+          <button type="button" class="btn btn-outline-success btn--control" id="action-yeah">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Modal of Liked Cats -->
+    <div class="modal fade" id="likedCatsModal" tabindex="-1" role="dialog" aria-labelledby="likedCatsModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="likedCatsModalTitle">Liked Cats</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- that's where the magic happens, only wizards should touch this -->
     <script src="./assets/app.js"></script>
