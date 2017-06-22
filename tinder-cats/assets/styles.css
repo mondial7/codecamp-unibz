@@ -25,3 +25,23 @@ body {
       -ms-animation-duration: 300ms;
 
 }
+
+/* fix cat image size */
+#main-card-img {
+
+  max-width: 300px;
+  max-height: 250px;
+
+}
+
+/* this media rule follows the bootstrap grid options -md-: 768 */
+@media (min-width: 768px) {
+
+  #main-card-img {
+
+    max-width: 500px;
+    max-height: 350px;
+
+  }
+
+}
