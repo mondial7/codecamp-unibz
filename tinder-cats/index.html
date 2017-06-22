@@ -17,14 +17,11 @@
     <!-- Font Awsome - icons -->
     <script src="https://use.fontawesome.com/8a8edf3e4a.js"></script>
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
-    <style> body { font-family: 'Patrick Hand SC', cursive !important; } </style>
+    <!-- Import our custom css -->
+    <link href="./assets/styles.css" rel="stylesheet" type="text/css" media="all" />
 
-    <!-- Extra style for buttons -->
-    <style>
-    .btn--control:hover { transform: scale(1.1); }
-    </style>
+    <!-- Import css for animations -->
+    <link href="./vendor/animate.min.css" rel="stylesheet" type="text/css" media="all" />
 
   </head>
   <body class="bg-faded">
@@ -44,9 +41,9 @@
 
         <div clas="col">
 
-          <div class="card animated fadeInUp card--tinder_cats" id="visible-card">
+          <div class="card card--tinder_cats" id="visible-card">
 
-            <img class="card-img-top" src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Meow..jpg" height="200px" alt="happy cat" />
+            <img class="card-img-top animated tada" src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Meow..jpg" height="200px" alt="happy cat" />
 
             <div class="card-block">
 
@@ -63,7 +60,7 @@
     </div>
 
     <!-- controllers buttons -->
-    <div class="container text-center p-3 fixed-bottom">
+    <div class="container text-center p-5 fixed-bottom">
 
       <div class="row justify-content-around">
 

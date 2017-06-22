@@ -1,0 +1,16 @@
+
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+
+  font-family: 'Raleway', Arial, sans-serif !important;
+
+}
+
+.btn--control:hover {
+
+  cursor: pointer;
+  transform: scale(1.3);
+
+}
