@@ -1,0 +1,66 @@
+<template name="homepage">
+
+  {{> nav}}
+
+  <div class="container">
+    <br>
+    <br>
+    <div class="row">
+
+      <div class="col-lg-3 col-md-4 hidden-sm-down">
+        <div class="card">
+          <div class="card-block">
+            col1
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card-block">
+            col1
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-8">
+        <div class="card">
+          <div class="card-block">
+            <div class="input-group">
+              <input id="inputPost" type="text" class="form-control" placeholder="Scrivi qualcosa">
+              <span class="input-group-btn">
+                <button id="postButton" class="btn btn-info" type="button">Scrivi</button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {{#each allTweets}}
+
+        <div class="card">
+          <div class="card-block">
+             il messaggio di hehe è <br><h1>{{ messaggio }}</h1>
+             <br>inserito alle {{data}}
+          </div>
+        </div>
+
+        {{/each}}
+      </div>
+
+      <div class="col-lg-3 hidden-md-down">
+        <div class="card">
+          <div class="card-block">
+            col3
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card-block">
+            col1
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</template>
